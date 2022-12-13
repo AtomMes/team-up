@@ -1,7 +1,12 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 
 const App = () => {
-  return <div>Atomy Lav Txaya</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default App;
