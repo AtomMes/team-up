@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
+import Home from './components/Home';
 
 const App = () => {
-  return <div>Atomy Lav Txaya</div>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 };
 
 export default App;
