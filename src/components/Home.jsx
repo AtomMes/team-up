@@ -7,6 +7,8 @@ const Home = () => {
       <img className={styles.bgImg} src={require(`../assets/images/orange-bg-ball.png`)} />
       <img className={styles.scrollImg} src={require(`../assets/images/more-scroll.png`)} />
       <div className={styles.container}>
+        <img className={styles.stars} src={require(`../assets/images/illustration-stars.png`)} />
+
         <div className={styles.texts}>
           <div className={styles.heading}>
             <h1>IMAGINE A PLACE</h1>
@@ -22,7 +24,6 @@ const Home = () => {
             <button>Try For Free</button>
           </div>
         </div>
-        <img className={styles.stars} src={require(`../assets/images/illustration-stars.png`)} />
       </div>
     </div>
   );

@@ -7,13 +7,19 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #e8e8e8;
-  width: 100vw;
-  height: 89.8vh;
+  width: 100%;
+  height: calc(100vh - 100px);
 
+  @media (max-width: 1420px) {
+    height: calc(100vh - 100px);
+  }
   .bgImg {
     position: absolute;
     bottom: 0;
     right: 0;
+    @media (max-width: 1420px) {
+      width: 400px;
+    }
   }
   .scrollImg {
     position: absolute;
@@ -28,18 +34,29 @@ body {
   }
   .container {
     width: 1140px;
-    height: 337px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .stars {
       position: absolute;
-      top: 300px;
+      margin-left: 150px;
       z-index: 0;
-      left: 250px;
     }
+
     .texts {
+      width: 80%;
+      height: 80%;
       position: relative;
-      z-index: 4444;
     }
+    @media (max-width: 1420px) {
+      .container {
+        width: 1000px;
+        height: 500px;
+      }
+    }
+
     .heading {
       width: 822px;
       height: 80px;
@@ -48,6 +65,10 @@ body {
         font-weight: 800;
         letter-spacing: 5%;
         color: #181818;
+
+        @media (max-width: 1420px) {
+          font-size: 60px;
+        }
       }
     }
     .description {
@@ -59,6 +80,9 @@ body {
         font-weight: 600;
         line-height: 45px;
         letter-spacing: 5%;
+        @media (max-width: 1420px) {
+          font-size: 19px;
+        }
       }
     }
     .button {
@@ -73,10 +97,10 @@ body {
         color: #ffffff;
         font-weight: 600;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.3s;
 
         &:hover {
-          background-color: #000000;
+          background-color: #181818d0;
         }
       }
     }

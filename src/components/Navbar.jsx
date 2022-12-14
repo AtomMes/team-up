@@ -36,9 +36,6 @@ const Navbar = () => {
               backgroundColor: '#ea552b',
               width: '150px',
               minHeight: '60px',
-              '&:hover': {
-                backgroundColor: 'primary.dark',
-              },
               whiteSpace: 'nowrap',
               marginRight: '20px',
               border: 'transparent',
@@ -52,6 +49,7 @@ const Navbar = () => {
           <Box display="flex" gap="30px">
             {navigationButtons.map((nav, i) => (
               <Button
+                key={i}
                 className="navigationButton"
                 sx={{
                   color: '#181818',
@@ -69,16 +67,18 @@ const Navbar = () => {
           </Box>
         </Box>
         <Box display="flex" sx={{ minHeight: '60px' }} alignItems="center">
-          <Button
-            sx={{
-              color: '#181818',
-              textTransform: 'capitalize',
-              fontSize: '16px',
-              marginRight: '30px',
-              fontWeight: '500',
-            }}>
-            Login
-          </Button>
+          <Link to="/login">
+            <Button
+              sx={{
+                color: '#181818',
+                textTransform: 'capitalize',
+                fontSize: '16px',
+                marginRight: '30px',
+                fontWeight: '500',
+              }}>
+              Login
+            </Button>
+          </Link>
           <Button
             variant="outlined"
             sx={{
