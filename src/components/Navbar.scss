@@ -1,32 +1,23 @@
-.navigationButton::before {
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  border-radius: 5px;
+.slide:hover {
+  box-shadow: inset  10em 0 0 0 var(--hover);
 }
-.navigationButton:hover::before {
-  transform: scaleX(1);
-  border-radius: 5px;
-  transform-origin: bottom left;
+
+$colors: (
+  slide: #ea552b,
+);
+
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 1deg)};
+  }
 }
-.navigationButton::before {
-  content: '';
-  //   display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  //   inset: 0 0 0 0;
-  background: #ea552b;
-  z-index: -1;
-  transition: transform 0.3s ease;
-  border-radius: 5px;
-}
-.navigationButton {
-  border-radius: 5px;
-  position: relative;
-  font-size: 5rem;
-}
-a {
-  text-decoration: none;
+
+.slide {
+  transition: 0.25s;
+
+  &:hover {
+    border-color: var(--hover);
+    color: #fff;
+  }
 }
