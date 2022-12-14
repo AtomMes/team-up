@@ -10,7 +10,6 @@ const CountDown = () => {
 
     return () => clearInterval(interval);
   }, [width]);
-  console.log('render');
   return (
     <div className="container">
       <p className="daysLeft">5 Days left...</p>
