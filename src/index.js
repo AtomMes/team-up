@@ -10,8 +10,8 @@ import CountDown from './components/CountDown';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  // <BrowserRouter>
-  //   <App />
-  // </BrowserRouter>
-  <CountDown />,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  // <CountDown />,
 );
