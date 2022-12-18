@@ -11,7 +11,7 @@ const SolutionsSelction = () => {
         <div className={s.container}>
           <div className={s.heading}>
             <img src={headingVector} />
-            <h1>Solutions</h1>
+            <h1>SOLUTIONS</h1>
           </div>
           <div className={s.numbers}>
             <img src={numbers} />

@@ -14,7 +14,13 @@
 
     .texts {
       width: 640px;
-
+      position: relative;
+      img {
+        margin: 0;
+        position: absolute;
+        right: 140px;
+        top: 50px;
+      }
       h1 {
         font-weight: 800;
         font-size: 80px;
