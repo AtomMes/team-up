@@ -1,50 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
   font-family: 'Montserrat', sans-serif;
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
+  max-width: 1130px;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: '0 auto';
-  background: url(./img/countdown.jpg);
-  flex-direction: column;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.daysLeft {
-  font-weight: 700;
-  font-size: 50px;
-  color: white;
-  letter-spacing: 6pt;
-}
-.countdown {
-  padding: 40px;
-  min-width: 1050px;
-  font-size: 200px;
-  display: flex;
-  justify-content: center;
-  border: 5px solid white;
-  color: white;
-  letter-spacing: 30px;
-  position: relative;
-  .loading {
-    left: -1px;
-    position: absolute;
-    height: 81px;
-    background-color: white;
-    top: -1px;
-  }
+  margin: 0 auto;
 }
 
-.comingSoon {
-  font-size: 50px;
-  color: white;
-}
+//------------- CountDown design --------------- //////////
+// .container {
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: '0 auto';
+//   background: url(./img/countdown.jpg);
+//   flex-direction: column;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   background-attachment: fixed;
+//   background-size: cover;
+// }
+// .daysLeft {
+//   font-weight: 700;
+//   font-size: 50px;
+//   color: white;
+//   letter-spacing: 6pt;
+// }
+// .countdown {
+//   padding: 40px;
+//   min-width: 1050px;
+//   font-size: 200px;
+//   display: flex;
+//   justify-content: center;
+//   border: 5px solid white;
+//   color: white;
+//   letter-spacing: 30px;
+//   position: relative;
+//   .loading {
+//     left: -1px;
+//     position: absolute;
+//     height: 81px;
+//     background-color: white;
+//     top: -1px;
+//   }
+// }
+
+// .comingSoon {
+//   font-size: 50px;
+//   color: white;
+// }
+// //

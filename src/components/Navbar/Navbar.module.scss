@@ -1,0 +1,71 @@
+$main: #425fcd;
+$text-white: #ffffff;
+$text-black: #181818;
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 119px;
+  justify-content: center;
+  background: #e8e8e8;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+
+    .logo {
+      background-color: $main;
+      width: 150px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      span {
+        color: $text-white;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+
+    .navLinks {
+      display: flex;
+      gap: 40px;
+
+      span {
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 400;
+        color: $text-black;
+      }
+    }
+
+    .loginSignup {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+
+      .login {
+        font-weight: 500;
+        color: $text-black;
+        cursor: pointer;
+      }
+
+      .signUp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 50px;
+        border: 2px solid $text-black;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
