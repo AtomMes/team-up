@@ -7,7 +7,12 @@ $text-black: #181818;
   height: 119px;
   justify-content: center;
   background: #e8e8e8;
-
+  position: sticky;
+  top: 0;
+  z-index: 4444;
+  a {
+    text-decoration: none;
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -37,7 +42,7 @@ $text-black: #181818;
       display: flex;
       gap: 40px;
 
-      span {
+      a {
         cursor: pointer;
         font-size: 18px;
         font-weight: 400;
@@ -54,6 +59,14 @@ $text-black: #181818;
         font-weight: 500;
         color: $text-black;
         cursor: pointer;
+
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #181818;
+        }
       }
 
       .signUp {
@@ -65,6 +78,14 @@ $text-black: #181818;
         border: 2px solid $text-black;
         border-radius: 5px;
         cursor: pointer;
+        a {
+          text-decoration: none;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #181818;
+        }
       }
     }
   }

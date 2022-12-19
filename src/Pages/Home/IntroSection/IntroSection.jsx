@@ -6,7 +6,7 @@ import scroll from '../../../assets/images/Pages/Home/intro/scroll.png';
 const IntroSection = () => {
   return (
     <div className="container">
-      <div className={s.root}>
+      <div className={s.root} id="intro">
         <div className={s.container}>
           <div className={s.description}>
             <h1>IMAGINE A PLACE</h1>
@@ -15,7 +15,9 @@ const IntroSection = () => {
               a handful of friends can spend time together. A place that makes it easy to talk every
               day and hang out more often.
             </p>
-            <button>Try for free</button>
+            <button>
+              <span>Try for free</span>
+            </button>
           </div>
           <img src={scroll} className={s.scroll} />
           <img src={people} className={s.people} />

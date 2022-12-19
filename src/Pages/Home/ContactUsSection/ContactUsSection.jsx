@@ -8,7 +8,7 @@ import twitter from '../../../assets/images/Pages/Home/contactUs/twitter.png';
 
 const ContactUsSection = () => {
   return (
-    <div className={s.root}>
+    <div className={s.root} id="contact">
       <div className={s.container}>
         <div className={s.texts}>
           <div className={s.heading}>

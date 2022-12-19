@@ -7,7 +7,7 @@ import vectorBottom from '../../../assets/images/Pages/Home/solutions/vector-bot
 const SolutionsSelction = () => {
   return (
     <div className="container">
-      <div className={s.root}>
+      <div className={s.root} id="solutions">
         <div className={s.container}>
           <div className={s.heading}>
             <img src={headingVector} />

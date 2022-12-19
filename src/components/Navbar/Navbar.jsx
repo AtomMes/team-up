@@ -1,27 +1,48 @@
 import { Box, Button } from '@mui/material';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.scss';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <div className={styles.logo}>
-          <span>LOGO</span>
-        </div>
+        <Link to="/">
+          <div className={styles.logo}>
+            <span>LOGO</span>
+          </div>
+        </Link>
         <div className={styles.navLinks}>
-          <span>Home</span>
-          <span>Solutions</span>
-          <span>About Us</span>
-          <span>Contact Us</span>
+          {location.pathname === '/' && (
+            <>
+              <ScrollLink to="intro" spy={true} smooth={true} offset={-120} duration={500}>
+                Home
+              </ScrollLink>
+              <ScrollLink to="solutions" spy={true} smooth={true} offset={-120} duration={500}>
+                Solutions
+              </ScrollLink>
+              <ScrollLink to="about" spy={true} smooth={true} offset={-100} duration={500}>
+                About Us
+              </ScrollLink>
+              <ScrollLink to="contact" spy={true} smooth={true} offset={-100} duration={500}>
+                Contact Us
+              </ScrollLink>
+            </>
+          )}
         </div>
         <div className={styles.loginSignup}>
           <div className={styles.login}>
-            <span>Login</span>
+            <Link to="/login">
+              <span>Login</span>
+            </Link>
           </div>
           <div className={styles.signUp}>
-            <span>Sign up</span>
+            <Link to="/register">
+              <span>Sign up</span>
+            </Link>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import headingVector from '../../../assets/images/Pages/Home/about/vector.png';
 
 const AboutSection = () => {
   return (
-    <div className={s.root}>
+    <div className={s.root} id="about">
       <div className={s.container}>
         <div className={s.texts}>
           <img src={headingVector} />

@@ -4,8 +4,9 @@ import Game from './components/Game';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
 import Home from './Pages/Home/Home';
-import Login from './Pages/SignIn/SignIn';
+import SignIn from './Pages/SignIn/SignIn';
 import Navbar from './components/Navbar/Navbar';
+import SignUp from './Pages/SignUp/SignUp';
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/login" element={<Login />}></Route>
+          <Route path="/login" element={<SignIn />}></Route>
+          <Route path="/register" element={<SignUp />}></Route>
+
           <Route path="/game" element={<Game />}></Route>
         </Routes>
       </div>
