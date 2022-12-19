@@ -1,13 +1,14 @@
 import React from 'react';
 import s from './FooterSection.module.scss';
-import insta from '../../../assets/images/insta.png';
-import facebook from '../../../assets/images/facebook.png';
-import linkedin from '../../../assets/images/linkedin.png';
-import twitter from '../../../assets/images/twitter.png';
-import whatsapp from '../../../assets/images/whatsapp.png';
-import telegram from '../../../assets/images/telegram.png';
-import viber from '../../../assets/images/viber.png';
-import logo from '../../../assets/images/logo.png';
+
+import insta from '../../../assets/images/Pages/Home/footer/insta.png';
+import facebook from '../../../assets/images/Pages/Home/footer/facebook.png';
+import linkedin from '../../../assets/images/Pages/Home/footer/linkedin.png';
+import twitter from '../../../assets/images/Pages/Home/footer/twitter.png';
+import whatsapp from '../../../assets/images/Pages/Home/footer/whatsapp.png';
+import telegram from '../../../assets/images/Pages/Home/footer/telegram.png';
+import viber from '../../../assets/images/Pages/Home/footer/viber.png';
+import logo from '../../../assets/images/Pages/Home/footer/logo.png';
 
 const FooterSection = () => {
   return (
@@ -40,6 +41,9 @@ const FooterSection = () => {
           </div>
           <div className={s.logo}>
             <img src={logo} />
+          </div>
+          <div className={s.rules}>
+            <p>© 2023 Platoon. All rights reserved.</p>
           </div>
         </div>
       </div>

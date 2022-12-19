@@ -1,7 +1,8 @@
 import React from 'react';
 import s from './IntroSection.module.scss';
-import people from '../../../assets/images/intro-section-people.png';
-import scroll from '../../../assets/images/scroll.png';
+import people from '../../../assets/images/Pages/Home/intro/people.png';
+import scroll from '../../../assets/images/Pages/Home/intro/scroll.png';
+
 const IntroSection = () => {
   return (
     <div className="container">

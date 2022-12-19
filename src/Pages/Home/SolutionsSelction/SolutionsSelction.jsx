@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './SolutionsSelction.module.scss';
-import headingVector from '../../../assets/images/solutions-vector.png';
-import numbers from '../../../assets/images/solution-numbers.png';
-import vectorBottom from '../../../assets/images/solutions-vector-bottom.png';
+import headingVector from '../../../assets/images/Pages/Home/solutions/vector.png';
+import numbers from '../../../assets/images/Pages/Home/solutions/numbers.png';
+import vectorBottom from '../../../assets/images/Pages/Home/solutions/vector-bottom.png';
 
 const SolutionsSelction = () => {
   return (

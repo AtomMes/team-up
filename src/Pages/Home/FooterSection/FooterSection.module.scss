@@ -1,11 +1,13 @@
 .root {
   background-color: #0f0f0f;
   height: 240px;
+  position: relative;
   .container {
     display: flex;
     align-items: center;
     gap: 130px;
     padding-top: 30px;
+    justify-content: center;
     .contacts {
       h1 {
         font-style: normal;
@@ -73,6 +75,19 @@
           height: 40px;
           cursor: pointer;
         }
+      }
+    }
+    .rules {
+      position: absolute;
+      bottom: 0;
+
+      p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.05em;
+        color: #ffffff;
       }
     }
   }

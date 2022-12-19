@@ -1,10 +1,10 @@
 import React from 'react';
 import s from './ContactUsSection.module.scss';
-import girl from '../../../assets/images/contact-girl.png';
-import insta from '../../../assets/images/contact-insta.png';
-import facebook from '../../../assets/images/contact-facebook.png';
-import linkedin from '../../../assets/images/contact-linkedin.png';
-import twitter from '../../../assets/images/contact-twitter.png';
+import girl from '../../../assets/images/Pages/Home/contactUs/girl.png';
+import insta from '../../../assets/images/Pages/Home/contactUs/insta.png';
+import facebook from '../../../assets/images/Pages/Home/contactUs/facebook.png';
+import linkedin from '../../../assets/images/Pages/Home/contactUs/linkedin.png';
+import twitter from '../../../assets/images/Pages/Home/contactUs/twitter.png';
 
 const ContactUsSection = () => {
   return (
