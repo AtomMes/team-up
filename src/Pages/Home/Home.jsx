@@ -9,7 +9,9 @@ import SolutionsSelction from './SolutionsSelction/SolutionsSelction';
 const Home = () => {
   return (
     <div className={styles.wrapper}>
-      <IntroSection />
+      <div className="white-bg">
+        <IntroSection />
+      </div>
       <SolutionsSelction />
       <AboutSection />
       <ContactUsSection />

@@ -6,10 +6,14 @@ $text-black: #181818;
   align-items: center;
   height: 119px;
   justify-content: center;
-  background: #e8e8e8;
+  background: #f8f8f8;
   position: sticky;
   top: 0;
   z-index: 4444;
+
+  @media (max-width: 1500px) {
+    height: 100px;
+  }
   a {
     text-decoration: none;
   }
@@ -22,20 +26,12 @@ $text-black: #181818;
     width: 100%;
     margin: 0 auto;
 
+    @media (max-width: 1160px) {
+      width: 90%;
+    }
     .logo {
-      background-color: $main;
-      width: 150px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-
-      span {
-        color: $text-white;
-        font-size: 20px;
-        font-weight: 500;
-      }
+      width: 210px;
+      height: 50px;
     }
 
     .navLinks {
@@ -47,6 +43,13 @@ $text-black: #181818;
         font-size: 18px;
         font-weight: 400;
         color: $text-black;
+      }
+      @media (max-width: 1160px) {
+        gap: 20px;
+
+        a {
+          font-size: 14px;
+        }
       }
     }
 
@@ -85,6 +88,23 @@ $text-black: #181818;
           font-size: 20px;
           line-height: 24px;
           color: #181818;
+        }
+      }
+      @media (max-width: 1160px) {
+        gap: 20px;
+
+        .login {
+          a {
+            font-size: 15px;
+          }
+        }
+
+        .signUp {
+          width: 100px;
+          height: 40px;
+          a {
+            font-size: 18px;
+          }
         }
       }
     }

@@ -7,7 +7,6 @@ import Home from './Pages/Home/Home';
 import SignIn from './Pages/SignIn/SignIn';
 import Navbar from './components/Navbar/Navbar';
 import SignUp from './Pages/SignUp/SignUp';
-
 const App = () => {
   return (
     <Provider store={store}>

@@ -1,26 +1,47 @@
 .root {
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
   height: calc(100vh - 119px);
   width: 100%;
   position: relative;
-
+  margin: 0 auto;
+  @media (max-width: 1160px) {
+    width: 90%;
+  }
+  @media (max-width: 1500px) {
+    height: calc(100vh - 100px);
+  }
   .container {
     display: flex;
-    margin-top: 100px;
     flex-direction: column;
     width: 1035px;
     height: 500px;
     background: url('../../../assets/images/Pages/Home/intro/stars.png');
     align-items: flex-start;
     justify-content: center;
-
+    margin-top: 50px;
+    @media (max-width: 960px) {
+      background: url('../../../assets/images/Pages/Home/intro/small-screen-stars.png');
+      background-repeat: no-repeat;
+      background-position: left;
+      background-position-y: -10px;
+      align-items: center;
+      margin-top: 0px;
+    }
     .scroll {
       position: absolute;
-      bottom: 10px;
+      bottom: 30px;
       right: 555px;
       cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.4;
+      }
+
+      @media (max-width: 960px) {
+        bottom: 30px;
+        right: initial;
+      }
     }
     .people {
       position: absolute;
@@ -28,6 +49,18 @@
       bottom: 0;
       width: 530px;
       height: 430px;
+
+      @media (max-width: 1500px) {
+        width: 480px;
+        height: 400px;
+      }
+      @media (max-width: 1160px) {
+        width: 400px;
+        height: 320px;
+      }
+      @media (max-width: 960px) {
+        display: none;
+      }
     }
 
     .description {
@@ -42,6 +75,11 @@
         line-height: 98px;
         color: #181818;
         margin: 0;
+
+        @media (max-width: 1500px) {
+          font-size: 70px;
+          word-spacing: 9%;
+        }
       }
 
       p {
@@ -54,9 +92,29 @@
         line-height: 45px;
         letter-spacing: 0.05em;
         color: #181818;
+
+        @media (max-width: 1500px) {
+          font-size: 17px;
+          word-spacing: 5.5%;
+          line-height: 38.5px;
+        }
+        @media (max-width: 1160px) {
+          width: 500px;
+        }
+      }
+      @media (max-width: 960px) {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h1 {
+          font-size: 60px;
+        }
+        p {
+          width: 610px;
+        }
       }
       button {
-        margin-top: 30px;
+        margin-top: 20px;
         width: 150px;
         height: 60px;
         background: #181818;

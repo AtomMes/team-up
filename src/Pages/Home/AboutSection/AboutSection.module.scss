@@ -32,7 +32,7 @@
       }
       p {
         font-weight: 600;
-        font-size: 23px;
+        font-size: 22px;
         line-height: 42px;
         letter-spacing: 0.05em;
         color: #ffffff;
@@ -40,15 +40,39 @@
         margin-top: 60px;
         margin-bottom: 60px;
       }
+
+      @media (max-width: 1160px) {
+        width: 550px;
+        h1 {
+          font-size: 70px;
+        }
+        p {
+          margin-top: 20px;
+          margin-bottom: 40px;
+
+          font-size: 19px;
+        }
+        img {
+          right: 100px;
+        }
+      }
     }
     .people {
-      width: 480px;
-      height: 345px;
+      width: 430px;
+      height: 330px;
       img {
         position: absolute;
         bottom: 0;
-        width: 480px;
-        height: 345px;
+        width: 430px;
+        height: 330px;
+      }
+      @media (max-width: 1160px) {
+        width: 380px;
+        height: 280px;
+        img {
+          width: 380px;
+          height: 280px;
+        }
       }
     }
   }

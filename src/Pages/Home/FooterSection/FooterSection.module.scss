@@ -1,4 +1,6 @@
 .root {
+  display: flex;
+  justify-content: center;
   background-color: #0f0f0f;
   height: 240px;
   position: relative;
@@ -8,6 +10,11 @@
     gap: 130px;
     padding-top: 30px;
     justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    @media (max-width: 1160px) {
+      gap: 50px;
+    }
     .contacts {
       h1 {
         font-style: normal;
@@ -15,6 +22,7 @@
         font-size: 16px;
         line-height: 20px;
         color: #ffffff;
+        text-align: center;
       }
       .contactLinks {
         display: flex;
@@ -31,49 +39,78 @@
           text-decoration: none;
         }
       }
+      @media (max-width: 1160px) {
+        h1 {
+          font-size: 12px;
+        }
+      }
     }
     .socialLinks {
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
+
       h1 {
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
         line-height: 20px;
         color: #ffffff;
+        text-align: center;
+      }
+      @media (max-width: 1160px) {
+        h1 {
+          font-size: 13px;
+        }
       }
       .socials {
         display: flex;
         gap: 30px;
         margin-top: 10px;
-
         img {
           width: 40px;
           height: 40px;
           cursor: pointer;
+        }
+        @media (max-width: 1160px) {
+          img {
+            width: 30px;
+            height: 30px;
+          }
         }
       }
     }
 
     .messengerLinks {
       h1 {
+        text-align: center;
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
         line-height: 20px;
         color: #ffffff;
       }
+      @media (max-width: 1160px) {
+        h1 {
+          font-size: 13px;
+        }
+      }
       .messengers {
         margin-top: 20px;
         display: flex;
         gap: 30px;
-
+        justify-content: center;
         img {
           width: 40px;
           height: 40px;
           cursor: pointer;
+        }
+        @media (max-width: 1160px) {
+          img {
+            width: 30px;
+            height: 30px;
+          }
         }
       }
     }
@@ -88,6 +125,15 @@
         line-height: 12px;
         letter-spacing: 0.05em;
         color: #ffffff;
+      }
+    }
+    .logo {
+      width: 210px;
+      height: 50px;
+
+      @media (max-width: 1160px) {
+        width: 150px;
+        height: 30px;
       }
     }
   }

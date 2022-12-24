@@ -1,8 +1,8 @@
-import { Box, Button } from '@mui/material';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 import { Link as ScrollLink } from 'react-scroll';
+import logo from '../../assets/images/Pages/logo.png';
 
 const Navbar = () => {
   const location = useLocation();
@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className={styles.container}>
         <Link to="/">
           <div className={styles.logo}>
-            <span>LOGO</span>
+            <img src={logo} />
           </div>
         </Link>
         <div className={styles.navLinks}>

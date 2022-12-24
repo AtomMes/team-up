@@ -8,7 +8,7 @@ import twitter from '../../../assets/images/Pages/Home/footer/twitter.png';
 import whatsapp from '../../../assets/images/Pages/Home/footer/whatsapp.png';
 import telegram from '../../../assets/images/Pages/Home/footer/telegram.png';
 import viber from '../../../assets/images/Pages/Home/footer/viber.png';
-import logo from '../../../assets/images/Pages/Home/footer/logo.png';
+import logo from '../../../assets/images/Pages/logo.png';
 
 const FooterSection = () => {
   return (
@@ -32,7 +32,7 @@ const FooterSection = () => {
             </div>
           </div>
           <div className={s.messengerLinks}>
-            <h1>We are on social media</h1>
+            <h1>We are in the Messengers</h1>
             <div className={s.messengers}>
               <img src={whatsapp} />
               <img src={telegram} />

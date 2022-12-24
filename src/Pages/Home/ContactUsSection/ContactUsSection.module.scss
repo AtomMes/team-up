@@ -1,15 +1,17 @@
 .root {
   display: flex;
   justify-content: center;
-
+  align-items: center;
   .container {
     display: flex;
     max-width: 1130px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
 
     .texts {
+      flex: 2;
+
       .heading {
         h1 {
           font-style: normal;
@@ -19,6 +21,11 @@
           letter-spacing: 0.05em;
           color: #181818;
         }
+        @media (max-width: 1160px) {
+          h1 {
+            font-size: 70px;
+          }
+        }
       }
 
       .contacts {
@@ -27,13 +34,21 @@
         a {
           font-style: normal;
           font-weight: 600;
-          font-size: 30px;
+          font-size: 28px;
           line-height: 37px;
           color: #181818;
           text-decoration: none;
           border: 2px solid #181818;
-          padding: 20px 30px 26px 30px;
+          padding: 25px 25px 25px 25px;
           border-radius: 10px;
+        }
+
+        @media (max-width: 1160px) {
+          gap: 40px;
+          a {
+            padding: 15px 15px 15px 15px;
+            font-size: 22px;
+          }
         }
       }
 
@@ -45,7 +60,11 @@
           letter-spacing: 0.05em;
           color: #181818;
         }
-
+        @media (max-width: 1160px) {
+          h1 {
+            font-size: 70px;
+          }
+        }
         .socialLinks {
           display: flex;
           gap: 42px;
@@ -55,18 +74,34 @@
             height: 84px;
             cursor: pointer;
           }
+          @media (max-width: 1160px) {
+            gap: 25px;
+
+            img {
+              width: 60px;
+              height: 60px;
+            }
+          }
         }
       }
     }
 
     .image {
-      width: 344px;
-      height: 388px;
+      flex: 1;
+
       img {
+        width: 340px;
+        height: 380px;
         position: absolute;
         bottom: 0;
-        right: -50px;
-        width: 550px;
+        right: 0;
+      }
+
+      @media (max-width: 1200px) {
+        img {
+          width: 350px;
+          height: 390px;
+        }
       }
     }
   }
