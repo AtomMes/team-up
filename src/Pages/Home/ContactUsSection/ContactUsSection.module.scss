@@ -2,12 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px 30px 0;
+
   .container {
     display: flex;
     max-width: 1130px;
     width: 90%;
     margin: 0 auto;
     position: relative;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .texts {
       flex: 2;
@@ -31,6 +39,7 @@
       .contacts {
         display: flex;
         gap: 70px;
+
         a {
           font-style: normal;
           font-weight: 600;
@@ -53,6 +62,11 @@
       }
 
       .socials {
+        @media (max-width: 1000px) {
+          margin-top: 25px;
+          text-align: center;
+        }
+
         h1 {
           font-weight: 800;
           font-size: 80px;
@@ -76,11 +90,14 @@
           }
           @media (max-width: 1160px) {
             gap: 25px;
-
             img {
               width: 60px;
               height: 60px;
             }
+          }
+          @media (max-width: 1000px) {
+            justify-content: center;
+            margin-bottom: 40px;
           }
         }
       }
@@ -95,12 +112,21 @@
         position: absolute;
         bottom: 0;
         right: 0;
+
+        @media (max-width: 1000px) {
+          position: static;
+        }
       }
 
       @media (max-width: 1200px) {
         img {
           width: 350px;
           height: 390px;
+
+          @media (max-width: 1000px) {
+            width: 238px;
+            height: 266px;
+          }
         }
       }
     }

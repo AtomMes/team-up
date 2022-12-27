@@ -12,9 +12,19 @@
     justify-content: center;
     position: relative;
 
+    @media (max-width: 1100px) {
+      flex-direction: column;
+    }
+
     .texts {
       width: 640px;
       position: relative;
+
+      @media (max-width: 1100px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
       img {
         margin: 0;
         position: absolute;
@@ -42,13 +52,13 @@
       }
 
       @media (max-width: 1160px) {
-        width: 550px;
+        // width: 550px;
         h1 {
           font-size: 70px;
         }
         p {
           margin-top: 20px;
-          margin-bottom: 40px;
+          margin-bottom: 0;
 
           font-size: 19px;
         }
@@ -73,6 +83,10 @@
           width: 380px;
           height: 280px;
         }
+      }
+      @media (max-width: 1100px) {
+        position:static;
+        margin: 0 auto;
       }
     }
   }

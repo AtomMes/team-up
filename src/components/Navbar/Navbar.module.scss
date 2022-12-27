@@ -40,9 +40,11 @@ $text-black: #181818;
 
       a {
         cursor: pointer;
+        padding: 6px 0;
         font-size: 18px;
         font-weight: 400;
         color: $text-black;
+        white-space: nowrap;
       }
       @media (max-width: 1160px) {
         gap: 20px;
@@ -51,6 +53,13 @@ $text-black: #181818;
           font-size: 14px;
         }
       }
+      @media (max-width: 850px) {
+        display: none;
+      }
+      
+
+
+
     }
 
     .loginSignup {

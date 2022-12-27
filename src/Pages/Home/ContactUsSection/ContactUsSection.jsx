@@ -12,14 +12,14 @@ const ContactUsSection = () => {
       <div className={s.container}>
         <div className={s.texts}>
           <div className={s.heading}>
-            <h1>CONTACT US</h1>
+            <h1 style={{margin:"20px 0"}} >CONTACT US</h1>
           </div>
           <div className={s.contacts}>
             <a href="tel:+37494013739">0(00) 00-00-00</a>
             <a href="mailto:platoon@gmail.com">Platoon@gmail.com</a>
           </div>
           <div className={s.socials}>
-            <h1>Social</h1>
+            <h1 style={{margin:"20px 0"}} >Social</h1>
             <div className={s.socialLinks}>
               <img src={insta} />
               <img src={facebook} />
