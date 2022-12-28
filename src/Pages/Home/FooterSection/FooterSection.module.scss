@@ -2,16 +2,18 @@
   display: flex;
   justify-content: center;
   background-color: #0f0f0f;
-  height: 240px;
+  min-height: 240px;
   position: relative;
   .container {
     display: flex;
-    align-items: center;
-    gap: 130px;
-    padding-top: 30px;
+    gap: 30px;
     justify-content: center;
     margin: 0 auto;
     width: 80%;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    padding: 50px 0 50px 0px;
     @media (max-width: 1160px) {
       gap: 50px;
     }
@@ -44,6 +46,15 @@
           font-size: 12px;
         }
       }
+      @media (max-width: 740px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+        h1 {
+          text-align: left;
+        }
+      }
     }
     .socialLinks {
       display: flex;
@@ -59,11 +70,6 @@
         color: #ffffff;
         text-align: center;
       }
-      @media (max-width: 1160px) {
-        h1 {
-          font-size: 13px;
-        }
-      }
       .socials {
         display: flex;
         gap: 30px;
@@ -78,6 +84,17 @@
             width: 30px;
             height: 30px;
           }
+        }
+      }
+      @media (max-width: 1160px) {
+        h1 {
+          font-size: 13px;
+        }
+      }
+      @media (max-width: 740px) {
+        flex: 1;
+        h1 {
+          text-align: left;
         }
       }
     }
@@ -112,12 +129,18 @@
             height: 30px;
           }
         }
+        @media (max-width: 740px) {
+          flex: 1;
+          h1 {
+            text-align: left;
+          }
+        }
       }
     }
     .rules {
       position: absolute;
       bottom: 0;
-
+      padding-bottom: 20px;
       p {
         font-style: normal;
         font-weight: 300;
@@ -128,12 +151,15 @@
       }
     }
     .logo {
-      width: 210px;
-      height: 50px;
-
-      @media (max-width: 1160px) {
-        width: 150px;
+      img {
+        width: 210px;
         height: 30px;
+      }
+      @media (max-width: 1160px) {
+        img {
+          width: 150px;
+          height: 20px;
+        }
       }
     }
   }
