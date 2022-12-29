@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Home.module.scss';
-import IntroSection from './IntroSection/IntroSection.tsx';
-import SolutionsSelction from './SolutionsSelction/SolutionsSelction.tsx';
-import AboutSection from './AboutSection/AboutSection.tsx';
-import ContactUsSection from './ContactUsSection/ContactUsSection.tsx';
-import FooterSection from './FooterSection/FooterSection.tsx';
+import IntroSection from './IntroSection/IntroSection';
+import SolutionsSelction from './SolutionsSelction/SolutionsSelction';
+import AboutSection from './AboutSection/AboutSection';
+import ContactUsSection from './ContactUsSection/ContactUsSection';
+import FooterSection from './FooterSection/FooterSection';
 
 const Home: React.FC = () => {
   return (

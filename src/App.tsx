@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Game from './components/Game';
-import { store } from './redux/store.ts';
+import { store } from './redux/store';
 import { Provider } from 'react-redux';
-import Home from './Pages/Home/Home.tsx';
-import SignIn from './Pages/SignIn/SignIn.tsx';
-import Navbar from './components/Navbar/Navbar.tsx';
-import SignUp from './Pages//SignUp/SignUp.tsx';
+import Home from './Pages/Home/Home';
+import SignIn from './Pages/SignIn/SignIn';
+import Navbar from './components/Navbar/Navbar';
+import SignUp from './Pages/SignUp/SignUp';
 
 const App: React.FC = () => {
   return (
