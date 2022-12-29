@@ -3,7 +3,7 @@ import s from './AboutSection.module.scss';
 import people from '../../../assets/images/Pages/Home/about/people.png';
 import headingVector from '../../../assets/images/Pages/Home/about/vector.png';
 
-const AboutSection = () => {
+const AboutSection: React.FC = () => {
   return (
     <div className={s.root} id="about">
       <div className={s.container}>

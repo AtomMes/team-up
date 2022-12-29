@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setQuestions } from '../redux/questionsSlice';
+import { setQuestions } from '../redux/questionsSlice.ts';
 // import styles from './Game.module.scss';
 
 const Game = () => {

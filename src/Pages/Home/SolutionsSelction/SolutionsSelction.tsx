@@ -4,10 +4,9 @@ import headingVector from '../../../assets/images/Pages/Home/solutions/vector.pn
 import one from '../../../assets/images/Pages/Home/solutions/one.png';
 import two from '../../../assets/images/Pages/Home/solutions/two.png';
 import three from '../../../assets/images/Pages/Home/solutions/three.png';
-
 import vectorBottom from '../../../assets/images/Pages/Home/solutions/vector-bottom.png';
 
-const SolutionsSelction = () => {
+const SolutionsSelction: React.FC = () => {
   return (
     <div className="container">
       <div className={s.root} id="solutions">

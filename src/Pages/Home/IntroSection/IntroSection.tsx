@@ -2,11 +2,9 @@ import React from 'react';
 import s from './IntroSection.module.scss';
 import people from '../../../assets/images/Pages/Home/intro/people.png';
 import scroll from '../../../assets/images/Pages/Home/intro/scroll.png';
-import starsSmallScreens from '../../../assets/images/Pages/Home/intro/small-screen-stars.png';
-
 import { Link as ScrollLink } from 'react-scroll';
 
-const IntroSection = () => {
+const IntroSection: React.FC = () => {
   return (
     <div className="container">
       <div className={s.root} id="intro">

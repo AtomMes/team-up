@@ -1,22 +1,21 @@
 import React from 'react';
-import s from './SignUp.module.scss';
+import s from './SignIn.module.scss';
 import facebook from '../../assets/images/Pages/Login/facebook.png';
 import gmail from '../../assets/images/Pages/Login/gmail.png';
 import linkedin from '../../assets/images/Pages/Login/linkedin.png';
 import email from '../../assets/images/Pages/Login/email.png';
 import lock from '../../assets/images/Pages/Login/lock.png';
-import people from '../../assets/images/Pages/Login/people-registration.png';
-import stars from '../../assets/images/Pages/Login/stars-registration.png';
-import user from '../../assets/images/Pages/Login/user.png';
+import people from '../../assets/images/Pages/Login/people.png';
+import stars from '../../assets/images/Pages/Login/stars.png';
 
-const SignUp = () => {
+const SignIn: React.FC = () => {
   return (
     <div className={s.root}>
       <div className={s.container}>
-        <div className={s.registrationFormWrapper}>
-          <div className={s.registrationForm}>
+        <div className={s.loginFormWrapper}>
+          <div className={s.loginForm}>
             <div className={s.heading}>
-              <h1>Create an account</h1>
+              <h1>Sign In to PLATOON</h1>
             </div>
             <div className={s.socials}>
               <img src={facebook} />
@@ -24,16 +23,10 @@ const SignUp = () => {
               <img src={linkedin} />
             </div>
             <div className={s.form}>
-              <a className={s.useEmail}>or use your email for registration</a>
+              <a className={s.useEmail}>or use your email account</a>
               <div className={s.inputs}>
-                <div className={s.nameInput}>
-                  <div className={s.nameInputContainer}>
-                    <img src={user} />
-                    <input type="text" placeholder="Name" />
-                  </div>
-                </div>
-                <div className={s.registrationInput}>
-                  <div className={s.registrationInputContainer}>
+                <div className={s.loginInput}>
+                  <div className={s.loginInputContainer}>
                     <img src={email} />
                     <input type="text" placeholder="Email" />
                   </div>
@@ -45,7 +38,11 @@ const SignUp = () => {
                   </div>
                 </div>
               </div>
-              <button className={s.registrationBtn}>SIGN UP</button>
+              <a className={s.forgotPass}>
+                Forgot your password?
+                <hr />
+              </a>
+              <button className={s.loginBtn}>LOGIN</button>
             </div>
           </div>
         </div>
@@ -58,4 +55,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignIn;

@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './FooterSection.module.scss';
-
 import insta from '../../../assets/images/Pages/Home/footer/insta.png';
 import facebook from '../../../assets/images/Pages/Home/footer/facebook.png';
 import linkedin from '../../../assets/images/Pages/Home/footer/linkedin.png';
@@ -10,7 +9,7 @@ import telegram from '../../../assets/images/Pages/Home/footer/telegram.png';
 import viber from '../../../assets/images/Pages/Home/footer/viber.png';
 import logo from '../../../assets/images/Pages/logo.png';
 
-const FooterSection = () => {
+const FooterSection: React.FC = () => {
   return (
     <div className={s.root}>
       <div className="container">

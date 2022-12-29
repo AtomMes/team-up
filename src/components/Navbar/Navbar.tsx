@@ -4,7 +4,7 @@ import styles from './Navbar.module.scss';
 import { Link as ScrollLink } from 'react-scroll';
 import logo from '../../assets/images/Pages/logo.png';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const location = useLocation();
 
   return (
